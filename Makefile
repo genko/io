@@ -8,7 +8,7 @@ COLL_S=$(wildcard garbagecollector/source/*.c)
 COR_S=$(wildcard coroutine/source/*.c)
 SOURCES=main.c $(VM_S) $(BASE_S) $(COLL_S) $(COR_S)
 OBJECTS=$(SOURCES:.c=.o)
-EXECUTABLE=io2c
+EXECUTABLE=io
 
 all: $(SOURCES) $(EXECUTABLE)
 	
@@ -20,4 +20,4 @@ $(EXECUTABLE): $(OBJECTS)
 
 clean:
 	find ./ -type f -name '*.o' -delete
-	-rm io2c
+	-rm io
