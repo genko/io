@@ -1,3 +1,4 @@
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
 
 //metadoc Object category Core
 //metadoc Object copyright Steve Dekorte 2002

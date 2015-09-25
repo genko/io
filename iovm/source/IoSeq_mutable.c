@@ -815,6 +815,7 @@ IO_METHOD(IoSeq, interpolateInPlace)
 	string = DATA(self);
 	//label = "IoSeq_interpolateInPlace()";
 	from = 0;
+        to = 0;
 
 	context = (context == IONIL(self)) ? locals : context;
 

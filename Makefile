@@ -1,7 +1,7 @@
 CC=gcc
-CFLAGS=-c -Wall -Os -s
+CFLAGS=-c -fno-strict-aliasing -Wall -Os -s
 IFLAGS=-Ibasekit/source -Iiovm/source -Igarbagecollector/source -Icoroutine/source -Ibasekit/source/simd_cph/include
-LDFLAGS=-lm -ldl -s
+LDFLAGS=-lm -s
 VM_S=$(wildcard iovm/source/*.c)
 BASE_S=$(wildcard basekit/source/*.c)
 COLL_S=$(wildcard garbagecollector/source/*.c)

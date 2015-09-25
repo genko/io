@@ -1870,7 +1870,7 @@ IO_METHOD(IoSeq, unpack)
 		for( ; count > 0 ; count --)
 		{
 			IoObject *v;
-
+			v = NULL;
 			switch(strFmt[i])
 			{
 				SEQ_UNPACK_VALUE_ASSIGN_LOOP('b', char, val, v)

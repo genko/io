@@ -1066,11 +1066,6 @@ int UArray_isZero(const UArray *self)
 	return 1;
 }
 
-// find
-
-// printf("i %i %c j %i %c\n", i, v1, j, v2);\
-// printf("j%i == %i\n", i, other->size);\
-
 #define UARRAY_FIND_TYPES(OP2, TYPE1, self, TYPE2, other)\
 {\
 	size_t i;\
